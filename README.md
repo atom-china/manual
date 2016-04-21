@@ -4,9 +4,9 @@
 
 ## 已翻译内容索引
 
-* **第一章：快速指引**
+* [第一章：新手入门](./chapter-1-getting-started/)
     * [为什么选择 Atom？](./chapter-1-getting-started/why-atom.md)
-    * [基础知识](./chapter-1-getting-started/atom-basics.md)
+    * [Atom 基础](./chapter-1-getting-started/atom-basics.md)
 
 ## 参与翻译
 
