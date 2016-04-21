@@ -96,7 +96,7 @@ $ rpm -i atom.x86_64.rpm
 
 ### 配置代理
 
-如果你在使用代理，你可以通过设置 `~/.atom/.apmrc` 文件里的 `https-proxy` 字段来配置 [apm](https://github.com/atom/apm)（Atom Package Manager）：
+如果你在使用代理，那可以通过设置 `~/.atom/.apmrc` 文件里的 `https-proxy` 字段来配置 [apm](https://github.com/atom/apm)（Atom Package Manager）：
 
 ```
 https-proxy = https://9.0.2.1:0
