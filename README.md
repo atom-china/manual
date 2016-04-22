@@ -8,10 +8,31 @@
     * [为什么选择 Atom？](./chapter-1-getting-started/why-atom.md)
     * [Atom 基础](./chapter-1-getting-started/atom-basics.md)
 
-## 参与翻译
+## 如何参与翻译
 
-你可以向这个仓库补充尚未翻译的来自 Flight Manual 中的新文章，在你开始之前请在 Issue 中搜索章节名称（如 `Chapter 2: Using Atom Atom Packages doing`），如果存在请回复 Issue, 和创建者沟通当前翻译进度，否则你可以新建一个 Issue 并添加一个 doing 标签提醒其他人你已经开始了翻译工作。
+1. 在 [翻译认领](https://github.com/atom-china/manual/issues?q=is%3Aissue+is%3Aopen+label%3A翻译认领) 列表中认领翻译章节，在 Issue 下添加评论认领。
+2. 为了避免重复工作，请在仓库维护者确认之后，Fork 此仓库开始翻译。
+3. 翻译完成后，发送 Pull Request，并在原 Issue 添加链接。
+4. 处理校对者的校对建议。
 
-在翻译完成一个章节后你可以发起一个 Pull Request, 邀请该仓库的维护者来一同校对翻译文稿，在所有校对建议都被解决后便可合并到该仓库。
+> 建议：Fork 此仓库后，请先从 master 分支上 `git checkout -b translate` 一个新的 translate 分支来翻译文章，翻译完成后再把 translate 分支发 PR。
 
-如果你在阅读过程中发现翻译错误，或与官方手册内容不同步，你可以发一个 Issue 提醒该仓库的维护者关注这个问题，或者你也可以直接发起 Pull Request 来修正这个错误。
+## 如何参与校对
+
+1. 在 [校对认领](https://github.com/atom-china/manual/issues?q=is%3Aissue+is%3Aopen+label%3A校对认领) 列表中认领校对章节。
+2. 直接在翻译章节对应的 Pull Request 里添加 note 校对。
+
+> 在文章被认领之后也欢迎小伙伴继续添加 note，共同目的都是提高翻译质量。
+
+## 其它参与方式
+
+如果你在阅读过程中发现翻译错误，或与 master 分支内容与官方手册不同步，你可以发一个 Issue 提醒该仓库的维护者关注这个问题，或者你也可以直接发起 Pull Request 来修正这个错误。
+
+## 参考链接
+
+在 GitHub 上有一些前人针对这个手册进行了一些翻译工作，翻译者可以参考：
+
+* <https://github.com/wizardforcel/atom-flight-manual-zh-cn>
+* <https://github.com/guo-yu/atom-guide>
+
+感谢他们和所有参与者的工作！
