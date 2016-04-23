@@ -1,4 +1,4 @@
-## 安装 Atom
+# 安装 Atom
 
 想要使用 Atom，我们就得先安装它。这部分将会讲到如何在 Mac，Windows 和 Linux 上安装 Atom，以及如何从源码构建它。
 
@@ -10,7 +10,7 @@
 
 这些按钮的文字和行为会自动对应你的操作系统，下载和安装都很方便。但我们还是一起详细看看吧！
 
-### 给 Mac 安装 Atom
+## 给 Mac 安装 Atom
 
 Atom 最初就是为 Mac 环境构建的，所以安装过程非常简单。可以直接点击 atom.io 网站上的下载按钮，也可以访问 Atom 的发布页：
 
@@ -37,7 +37,7 @@ $
 
 想要自己安装 `atom` 和 `apm` 命令，可以在 Command Palette 运行 「Windows: Install Shell Commands」，会自动弹框询问你的管理员密码。（译注：Mac 下打开 Command Palette 的快捷键是 <kbd>shift</kbd>+<kbd>cmd</kbd>+<kbd>p</kbd>，Windows 下是 <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>p</kbd> 。）
 
-### 给 Windows 安装 Atom
+## 给 Windows 安装 Atom
 
 在 Windows 可以从 <https://atom.io> 获取 Windows Installer，也可以从 [Atom Releases](https://github.com/atom/atom/releases/latest) 下载 `AtomSetup.exe`。
 
@@ -47,7 +47,7 @@ $
 
 图 2. Windows 下的 Atom
 
-#### 便携模式
+### 便携模式
 
 Atom 在 Windows 下有一种便携模式，允许将它自己、Settings、Packages 和缓存等都放置在可移动存储设备上，这将使你能很容易地把 Atom 拿到另一台机器使用，不用安装任何东西。
 
@@ -68,7 +68,7 @@ Atom 在 Windows 下有一种便携模式，允许将它自己、Settings、Pack
 * `.atom` 文件夹必须是可写的
 * 不能有 ATOM_HOME 环境变量（这将覆盖便携模式的行为）
 
-### 给 Linux 安装 Atom
+## 给 Linux 安装 Atom
 
 在 Linux 下安装 Atom，你可以从 [Atom 主页](https://atom.io/) 或者 [Atom 项目发布页](https://github.com/atom/atom/releases) 按需下载 [Debian package](https://atom.io/download/deb) 或 [RPM package](https://atom.io/download/rpm)。
 
@@ -84,7 +84,7 @@ $ sudo dpkg -i atom-amd64.deb
 $ rpm -i atom.x86_64.rpm
 ```
 
-### 从源码构建 Atom
+## 从源码构建 Atom
 
 如果上面这些方案都不适用于你的环境，或者你只是想试一试，那么也可以从源码构建 Atom。
 
@@ -94,7 +94,7 @@ $ rpm -i atom.x86_64.rpm
 
 一般来讲，你需要使用 Git、C++ 工具链和 Node 去构建 Atom，上面的项目的文档里有详细介绍。
 
-### 配置代理
+## 配置代理
 
 如果你在使用代理，那可以通过设置 `~/.atom/.apmrc` 文件里的 `https-proxy` 字段来配置 [apm](https://github.com/atom/apm)（Atom Package Manager）：
 

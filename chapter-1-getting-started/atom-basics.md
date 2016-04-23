@@ -4,7 +4,9 @@
 
 当你第一次打开 Atom 的时候，你会看到这样的一个窗口：
 
-<img src="http://atom-china.org/uploads/default/35/1836f321aa14fd8d.png" width="686" height="500">
+![Atom's welcom screen](./images/first-launch.png)
+
+图 1. Atom 的欢迎屏幕
 
 这是 Atom 的欢迎屏幕（welcome screen），它展示了一些不错的建议，帮助你了解 Atom.
 
@@ -24,7 +26,9 @@
 
 在 Atom 中几乎所有的操作都通过这种搜索驱动的菜单来完成，你只需要按下 `cmd-shift-P` 来搜索命令，而不必在复杂的传统菜单栏间点来点去。
 
-<img src="http://atom-china.org/uploads/default/36/dd7020c9679420aa.png" width="690" height="489">
+![The Command Palette](./images/command-palette.png)
+
+图 2. 命令面板
 
 除了搜索数以千计的命令之外，命令面板上会显示每个命令对应的快捷键，这意味着你可以在使用这些命令的同时学习对应的快捷键，以便之后使用。
 
@@ -34,7 +38,9 @@
 
 Atom 有很多选项和偏好设置，你可以在设置界面修改它们。
 
-<img src="http://atom-china.org/uploads/default/37/692bf983aa6331c5.png" width="651" height="500">
+![Atom's settings screen](./images/settings.png)
+
+图 3. Atom 的设置界面
 
 在设置界面中，你可以修改主题、修改文本折行的行为（wrapping）、字体大小、缩进宽度、滚动速度等选项。你也可以用这个界面安装新的插件和主题，我们在 [Atom Packages](https://atom.io/docs/latest/ch02/_atom_packages) 中介绍了这个话题。
 
@@ -44,7 +50,9 @@ Atom 有很多选项和偏好设置，你可以在设置界面修改它们。
 
 你可以在设置界面中修改 Atom 的主题，Atom 内建了 4 个不同的 UI 主题，分别是亮色和暗色版本的名为 Atom 和 One 的主题。以及 8 个不同的语法着色主题。你可以通过点击左边栏的 Themes 选项卡来改变当前主题，或安装新的主题。
 
-<img src="http://atom-china.org/uploads/default/38/6a956cb54dc169c5.png" width="690" height="479">
+![Changing the theme from Settings](./images/theme.png)
+
+图 4. 从设置里更改主题
 
 UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜色；而语法着色主题修改编辑器中文字的语法高亮方案。你只需要简单地在下拉框中选择另一项，即可修改主题。
 
@@ -54,7 +62,9 @@ UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜�
 
 你可以通过设置界面指定 Atom 处理空白和折行的策略。
 
-<img src="http://atom-china.org/uploads/default/39/cb2761580959bdf5.png" width="690" height="408">
+![Changing soft wrap from Settings](./images/settings-wrap.png)
+
+图 5. 从设置里更改广本折行
 
 当你启用了 Soft Tabs, Atom 将会在你按 `tab` 键时用空格来替代真正的制表符，Tab Length 则指定了一个制表符代表多少个空格，或者当 Soft Tabs 被禁用时多少个空格相当于一个制表符。
 
@@ -66,7 +76,9 @@ UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜�
 
 在 Atom 的开发过程中，偶尔会有一些新功能，但没有默认启用给所有用户。如果你愿意的话，你可以在设置界面中提前体验这些功能。
 
-<img src="http://atom-china.org/uploads/default/40/45f310c266429123.png" width="690" height="263">
+![Beta features in the Settings view](./images/advanced-settings.png)
+
+图 6. 设置界面里的测试功能
 
 这对于插件开发者来说非常有用，开发者可以在一个功能被默认启用之前，测试他们维护的插件与新功能的兼容性。
 
@@ -80,7 +92,9 @@ UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜�
 
 在 Atom 中有几种方式可以打开一个文件。你可以在菜单栏中点击 File 菜单下的 Open, 或者用快捷键 `cmd-O`, 用操作系统的对话框选择一个文件。
 
-<img src="http://atom-china.org/uploads/default/41/84bdb3979e8066f7.png" width="690" height="493">
+![Open file by dialog](./images/open-file.png)
+
+图 7. 从文件选择对话框打开文件
 
 这在打开一个不属于当前项目的文件非常有用，或者更可能是你刚打开一个新的窗口。
 
@@ -116,7 +130,9 @@ Atom 不仅仅可以编辑单个文件；大多数情况下你需要编辑由若
 
 当你用 Atom 打开一个或多个目录时，目录树会自动地出现在窗口左侧。
 
-<img src="http://atom-china.org/uploads/default/42/5784442761588b2a.png" width="690" height="450">
+![Tree view in an open project](./images/project-view.png)
+
+图 8. 已打开项目的目录树
 
 目录树允许你查看和修改当前项目的目录结构，你可以在目录树中打开文件、重命名文件、删除文件、创建文件。
 
@@ -128,7 +144,9 @@ Atom 不仅仅可以编辑单个文件；大多数情况下你需要编辑由若
 
 当你按下 `cmd-T` 或 `cmd-P` 的时候，模糊查找框（Fuzzy Finder）就会弹出。它允许你通过输入文件名或路径的一部分，在整个项目中模糊查找相应的文件。
 
-<img src="http://atom-china.org/uploads/default/43/58aedc7103e6bc4f.png" width="690" height="429">
+![Opening files with the Fuzzy Finder](./images/finder.png)
+
+图 9. 使用模糊查找框打开文件
 
 你也可以通过 `cmd-B` 来只查找已经打开的文件，而不是所有文件。你还可以用 `cmd-shift-B` 来只查找从上次 Git 提交之后修改过或新增的文件。
 
