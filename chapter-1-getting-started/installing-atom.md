@@ -2,7 +2,7 @@
 
 想要使用 Atom，我们就得先安装它。这部分将会讲到如何在 Mac，Windows 和 Linux 上安装 Atom，以及如何从源码构建它。
 
-在这些系统下安装 Atom 都很简单。访问 <https://atom.io> 后在页面顶部你就能看到下载按钮。
+在这些系统下安装 Atom 都很简单。访问 <https://atom.io> 后在页面顶部就能看到下载按钮。
 
 ![Download buttons on atom io](./images/linux-downloads.png)
 
@@ -39,7 +39,7 @@ $
 
 ### 给 Windows 安装 Atom
 
-在 Windows 可以从 <https://atom.io> 获取 Windows Installer，也可以从 [Atom Releases](https://github.com/atom/atom/releases/latest) 下载 AtomSetup.exe。
+在 Windows 可以从 <https://atom.io> 获取 Windows Installer，也可以从 [Atom Releases](https://github.com/atom/atom/releases/latest) 下载 `AtomSetup.exe`。
 
 它们会帮你安装好 Atom，将 `atom` 和 `apm` 命令添加到 `PATH` 环境变量，在桌面和开始菜单创建快捷方式，往右键菜单添加「Open with Atom」，让 Atom 能够在用户从「打开方式」里选取关联程序时可见。
 
@@ -53,20 +53,20 @@ Atom 在 Windows 下有一种便携模式，允许将它自己、Settings、Pack
 
 开始使用便携模式的 Atom：
 
-1. 从 [Atom Releases](https://github.com/atom/atom/releases/latest) 下载 atom-windows.zip
-2. 将 atom-windows.zip 解压到你的可移动存储设备
-3. 从解压出来的 Atom 文件夹里启动 atom.exe
-4. 当 Atom 启动后它会在 %USERPROFILE% 下创建 .atom 文件夹
-5. 将 .atom 文件夹和可移动存储设备里的 Atom 文件夹放到一起
+1. 从 [Atom Releases](https://github.com/atom/atom/releases/latest) 下载 `atom-windows.zip`
+2. 将 `atom-windows.zip` 解压到你的可移动存储设备
+3. 从解压出来的 Atom 文件夹里启动 `atom.exe`
+4. 当 Atom 启动后它会在 `%USERPROFILE%` 下创建 `.atom` 文件夹
+5. 将 `.atom` 文件夹和可移动存储设备里的 Atom 文件夹放到一起
 
-现在不管你何时从你的可移动存储设备启动 Atom.exe，就会进入便携模式，所有的 settings 和 packages 都会保存到 .atom 文件夹。
+现在不管你何时从你的可移动存储设备启动 `Atom.exe`，就会进入便携模式，所有的 settings 和 packages 都会保存到 `.atom` 文件夹。
 
 注意便携模式有几点限制：
 
 * 没有集成到资源管理器，没有为命令行命令设置 PATH 环境变量
-* .atom 文件夹必须放在包含 atom.exe 的文件夹的旁边（不是里面）
-* .atom 文件夹必须是可写的
-* 不能有 ATOM_HOME 环境变量（这将覆盖便携行为）
+* `.atom` 文件夹必须放在包含 `atom.exe` 的文件夹的同级（不是里面）
+* `.atom` 文件夹必须是可写的
+* 不能有 ATOM_HOME 环境变量（这将覆盖便携模式的行为）
 
 ### 给 Linux 安装 Atom
 
@@ -86,7 +86,7 @@ $ rpm -i atom.x86_64.rpm
 
 ### 从源码构建 Atom
 
-如果上面这些方案都不适用于你的环境，或者你就是想尝试，那么也可以从源码构建 Atom。
+如果上面这些方案都不适用于你的环境，或者你只是想试一试，那么也可以从源码构建 Atom。
 
 这个链接里有最新的详细构建教程，有 Mac、Windows、Linux 和 FreeBSD 几种版本：
 
@@ -102,7 +102,7 @@ $ rpm -i atom.x86_64.rpm
 https-proxy = https://9.0.2.1:0
 ```
 
-如果你开启了防火墙并且在安装 packages 时看到 SSL 错误，那可以在 `~/.atom/.apmrc` 里添加这样一行来禁用 strict SSL：
+如果你开启了防火墙并且在安装 packages 时看到 SSL 错误，那可以在 `~/.atom/.apmrc` 里添加这样一行来禁用对 SSL 证书的检查：
 
 ```
 strict-ssl = false
