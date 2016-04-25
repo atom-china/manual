@@ -20,9 +20,10 @@
 
 ## 命令面板（Command Palette)
 
-当你按下 `cmd-shift-P` <span id="note1">[¹](#footnote1)</span> 并且当前焦点在一个窗格上的时候，命令面板就会弹出来。
+在这个欢迎屏幕中，我们将介绍可能是 Atom 中最重要的命令，即命令面板（Command Palette)。
+当你焦点在一个窗格上的时，按下 `cmd-shift-P` <span id="note1">[¹](#footnote1)</span> ，命令面板就会弹出。
 
-在 Atom 中几乎所有的操作都通过这种搜索驱动的菜单来完成，你只需要按下 `cmd-shift-P` 来搜索命令，而不必在复杂的传统菜单栏间点来点去。
+在 Atom 中几乎所有的主要操作都通过这种搜索驱动的菜单来完成，你只需要按下 `cmd-shift-P` 来搜索命令，而不必在复杂的传统菜单栏间点来点去。
 
 ![The Command Palette](./images/command-palette.png)
 
@@ -56,13 +57,13 @@ UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜�
 
 在 Atom.io 上有数十种主题供你选择，如果你想要一个独一无二的主题，我们也在 [Basic Customization](https://atom.io/docs/latest/using-atom-basic-customization#style-tweaks) 中介绍了如何自定义主题，还在 [Creating a Theme](https://atom.io/docs/latest/hacking-atom-creating-a-theme) 中介绍了如何创建一个主题。
 
-### 文本折行
+### 文本折行（Soft Wrap）
 
 你可以通过设置界面指定 Atom 处理空白和折行的策略。
 
 ![Changing soft wrap from Settings](./images/settings-wrap.png)
 
-图 5. 从设置里更改广本折行
+图 5. 从设置里更改文本折行
 
 当你启用了 Soft Tabs, Atom 将会在你按 `tab` 键时用空格来替代真正的制表符，Tab Length 则指定了一个制表符代表多少个空格，或者当 Soft Tabs 被禁用时多少个空格相当于一个制表符。
 
@@ -80,7 +81,7 @@ UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜�
 
 这对于插件开发者来说非常有用，开发者可以在一个功能被默认启用之前，测试他们维护的插件与新功能的兼容性。
 
-你也可能仅仅是因为期待即将到来的新功能，所以时不时来这里看一看。
+当然，你也可以仅仅因为期待即将到来的新功能，所以时不时来这里看一看。
 
 ## 打开、编辑、保存文件
 
@@ -96,7 +97,9 @@ UI 主题会修改标签栏、左侧目录树（tree view）等 UI 元素的颜�
 
 这在打开一个不属于当前项目的文件非常有用，或者更可能是你刚打开一个新的窗口。
 
-另一种打开文件的方法是用命令行。在 Atom 的菜单栏中有一个名为 Install Shell Commands 的菜单项，他会向你的终端中安装一个新的名为 `atom` 的命令，你可以用一个或多个文件路径作为参数去运行 `atom` 命令。
+另一种打开文件的方法是用命令行。如果你使用的是 Mac，那么在 Atom 的菜单栏中有一个名为 Install Shell Commands 的菜单项，用以向你的终端中安装一个新的名为 `atom` 和 `apm` 的命令（如果 Atom 没有自动安装的话）。在 Windows 和 Linux  ，`atom` 和 `apm` 命令会作为安装的一部分自动安装。
+
+你可以用一个或多个文件路径作为参数去运行 `atom` 命令。
 
 ```
 $ atom -h
@@ -112,7 +115,7 @@ window.
 ...
 ```
 
-这对于从终端中打开一个文件来说非常有用，只需运行 `atom [files]` 即可。
+如果你习惯于终端或使用终端工作，那么这对于你非常有用，只需运行 `atom [files]` ，即可进行编辑。
 
 ### 编辑和保存文件
 
@@ -134,7 +137,7 @@ Atom 不仅仅可以编辑单个文件；大多数情况下你需要编辑由若
 
 目录树允许你查看和修改当前项目的目录结构，你可以在目录树中打开文件、重命名文件、删除文件、创建文件。
 
-你可以通过快捷键 cmd-\ 或 `tree-view:toggle` 命令来隐藏或重新显示目录树，用快捷键 `ctrl-0` 可以将焦点切换到目录树。当焦点位于目录树上时，你可以用快捷键 `a`、`m` 以及 `delete` 来创建、移动或删除文件和目录。你还可以简单地在目录树中用右键点击文件，你可以看到更多选项，除了前面提到的，还可以在操作系统的文件浏览器中显示文件、复制文件的路径到剪贴板。
+你可以通过快捷键 cmd-\ 或 `tree-view:toggle` 命令来隐藏或重新显示目录树，用快捷键 `ctrl-0` 可以将焦点切换到目录树。当焦点位于目录树上时，你可以用快捷键 `a`、`m` 以及 `delete` 来创建、移动或删除文件和目录。你还可以简单地在目录树中用右键点击文件来看到更多选项，除了前面提到的，还可以在操作系统的文件浏览器中显示文件、复制文件的路径到剪贴板。<span id="note2">[²](#footnote2)</span>
 
 ### 打开项目中的文件
 
@@ -148,20 +151,16 @@ Atom 不仅仅可以编辑单个文件；大多数情况下你需要编辑由若
 
 你也可以通过 `cmd-B` 来只查找已经打开的文件，而不是所有文件。你还可以用 `cmd-shift-B` 来只查找从上次 Git 提交之后修改过或新增的文件。
 
-模糊查找框会根据 `core.ignoredNames` 和 `fuzzy-finder.ignoredNames` 这两个选项来决定不查找哪些文件。如果在你的项目里有很多你不希望它们出现在模糊查找框的文件，那么你可以在选项中添加它们的路径或使用通配符。你可以在设置界面的 Core Settings 下找到这两个选项，之后我们会在 [Basic Customization](https://atom.io/docs/latest/using-atom-basic-customization#global-configuration-settings) 一节中介绍更多的选项。
+模糊查找框会根据 `core.ignoredNames` 和 `fuzzy-finder.ignoredNames` 这两个选项来决定不查找哪些文件。如果在你的项目里有很多你不希望它们出现在模糊查找框的文件，那么你可以在选项中添加它们的路径或使用通配符。之后我们会在 [Global Configuration Settings](http://flight-manual.atom.io/using-atom/sections/basic-customization/#_global_configuration_settings) 一节中介绍更多的选项，但现在你可以先在设置界面的 Core Settings 下找到这两个选项。
 
 这些选项的通配符功能由名为 minimatch 的一个 Node.js 库提供，你可以在这里了解到它的语法：<https://github.com/isaacs/minimatch>
 
 在 core.excludeVcsIgnoredPaths 这个选项被开启时，模糊查找框会忽略 .gitignore 中指定的的文件，你可以在设置界面中修改这些选项。
 
-## 模块化的 Atom
-
-就像 Atom 的其他很多部分一样，目录树也并非直接内建在 Atom 中，它是一个独立的插件，被捆绑在 Atom 发行版中并默认启用。
-
-你可以在这里找到目录树插件的源代码：<https://github.com/atom/tree-view>
-
-Atom 有趣的部分之一就是，很多核心功能实际上只是一个普通的插件——你也可以用类似的方式来实现其他功能。这意味着如果你不喜欢默认的目录树，你完全可以简单地自己编写一个，然后将默认的目录树替换掉。
 
 ---
 
 <sup id="footnote1">[1](#note1)：在这个教程中我们会用类似 `cmd-shift-P` 的形式来运行命令，这是 Atom 在 Mac 上的默认快捷键，如果你在其他的平台上使用 Atom, 可能会稍有不同。如果某个快捷键无法工作，你可以通过命令面板来查找正确的快捷键。</sup>
+
+
+<sup id="footnote2">[2](#note2)：Atom 模式<br/>就像 Atom 的其他很多部分一样，目录树也并非直接内建在 Atom 中，它是一个独立的插件，被捆绑在 Atom 发行版中并默认启用。<br/>你可以在<https://github.com/atom/tree-view>中找到目录树的的源码<br/>Atom 有趣的部分之一就是，很多核心功能实际上只是一个普通的插件——你也可以用类似的方式来实现其他功能。这意味着如果你不喜欢默认的目录树，你完全可以简单地自己编写一个，然后将默认的目录树替换掉。</sup>
