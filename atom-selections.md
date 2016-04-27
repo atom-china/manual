@@ -1,4 +1,4 @@
-# Atom 文本选择
+#Atom 文本选择
 
 Atom 支持了很多文本选择操作，比如区域删除、缩进和一些查找操作，以及用引号或者括号把文字括起来之类的标记操作。
 
@@ -12,13 +12,13 @@ Atom 支持了很多文本选择操作，比如区域删除、缩进和一些查
 
 `ctrl-shift-F`：选择后一个字符
 
-`alt-shift-B`, `alt-shift-left`：选择从当前位置到单词开头之间的内容
+`alt-shift-B`，`alt-shift-left`：选择从当前位置到单词开头之间的内容
 
-`alt-shift-F`, `alt-shift-right`：选择从当前位置到单词末尾之间的内容
+`alt-shift-F`，`alt-shift-right`：选择从当前位置到单词末尾之间的内容
 
-`ctrl-shift-E`, `cmd-shift-right`：选择从当前位置到本行末尾之间的内容
+`ctrl-shift-E`，`cmd-shift-right`：选择从当前位置到本行末尾之间的内容
 
-`ctrl-shift-A`, `cmd-shift-left`：选择从当前位置到本行开头之间的内容
+`ctrl-shift-A`，`cmd-shift-left`：选择从当前位置到本行开头之间的内容
 
 `cmd-shift-up`：选择从当前位置到文件开头之间的内容
 
