@@ -9,6 +9,7 @@
     * [Atom 基础](./chapter-1-getting-started/atom-basics.md)
     * [安装 Atom](./chapter-1-getting-started/installing-atom.md)
 * [第二章：使用 Atom](./chapter-2-using-atom/)
+    * [在 Atom 里移动](./chapter-2-using-atom/moving-in-atom.md)
     * [Atom 文本选择](./chapter-2-using-atom/atom-selections.md)
 
 ## 如何参与翻译
