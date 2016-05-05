@@ -57,6 +57,27 @@
   当 Atom 启动后它会在 `%USERPROFILE%` 下创建 `.atom` 文件夹
   ```
 
+* 若章节里包含图片，将图片保存到该章节所在文件夹里的 images 子文件夹里。
+
+  例如：
+
+  ```
+  ![The Command Palette](./images/command-palette.png)
+  ```
+
+## 主要贡献者名单
+
+（按参与时间排序）
+
+* @jysperm
+* @mzlogin
+* @hypogaea
+* @wizardforcel
+
+## 鸣谢
+
+本项目较多内容源自 [atom-flight-manual-zh-cn](https://github.com/wizardforcel/atom-flight-manual-zh-cn) ，感谢 @wizardforcel 的贡献。
+
 ## 参考链接
 
 在 GitHub 上有一些前人针对这个手册进行了一些翻译工作，翻译者可以参考：
@@ -65,3 +86,7 @@
 * <https://github.com/guo-yu/atom-guide>
 
 感谢他们和所有参与者的工作！
+
+## License
+
+[Creative Commons BY-SA license 3.0](./LICENSE)
