@@ -69,14 +69,14 @@
 
 （按参与时间排序）
 
-* @jysperm
-* @mzlogin
-* @hypogaea
-* @wizardforcel
+* [jysperm](https://github.com/jysperm)
+* [mzlogin](https://github.com/mzlogin)
+* [hypogaea](https://github.com/hypogaea)
+* [wizardforcel](https://github.com/wizardforcel)
 
 ## 鸣谢
 
-本项目较多内容源自 [atom-flight-manual-zh-cn](https://github.com/wizardforcel/atom-flight-manual-zh-cn) ，感谢 @wizardforcel 的贡献。
+本项目较多内容源自 [atom-flight-manual-zh-cn](https://github.com/wizardforcel/atom-flight-manual-zh-cn) ，感谢 [wizardforcel](https://github.com/wizardforcel) 的贡献。
 
 ## 参考链接
 

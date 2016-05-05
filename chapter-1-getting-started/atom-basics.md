@@ -4,7 +4,7 @@
 
 当你第一次打开 Atom 的时候，你会看到这样的一个窗口：
 
-![Atom's welcom screen](./images/first-launch.png)
+![Atom's welcome screen](./images/first-launch.png)
 
 图 1. Atom 的欢迎屏幕
 
