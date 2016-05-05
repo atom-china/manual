@@ -52,9 +52,9 @@ Atom 能做到一件很酷的事，就是多光标支持。这在处理一列很
 
 用这些命令你可以在你的文档的多个位置放置光标，并且高效地一次性在多个位置执行相同命令。
 
-![使用多光标](http://flight-manual.atom.io/using-atom/images/multiple-cursors.gif)
+![使用多光标](./images/multiple-cursors.gif)
 
-图1. 使用多光标
+图 1. 使用多光标
 
 这种方法在诸如重命名变量或者修改文本格式这类重复任务的时候很有帮助。你可以借助几乎任何插件或命令来使用它——比如转换字母大小写，以及移动或复制文本行。
 
@@ -66,9 +66,9 @@ Atom 自带了一些命令来帮助你管理你的文档中的空白字符。一
 
 空白字符命令在 [atom/whitespace](https://github.com/atom/whitespace) 包中实现。空白字符命令的设置，在 `whitespace` 包的页面中提供。
 
-![whitespace settings](http://flight-manual.atom.io/using-atom/images/whitespace.png)
+![whitespace settings](./images/whitespace.png)
 
-图2. 管理你的空白字符设置
+图 2. 管理你的空白字符设置
 
 要注意的是“ Remove Trailing Whitespace （移除末尾空白字符）”选项是默认开启的。这意味着每当你在 Atom 中保存文件时， Atom 都会去掉文件末尾的空白字符。如果你想禁用这个选项，在你的设置面板中打开 `whitespace` 包的页面，取消勾选该选项。
 
@@ -102,9 +102,9 @@ Atom 也会自动完成 [] ， () ， {} ， "" ， '' ， “” ， ‘’ ，
 
 当你打开一个文件，Atom 将会自动检测文件编码。如果 Atom 无法识别，文件编码将会默认设置为 UTF-8 ，之后新建的文件也将应用此默认值。
 
-![file encodings](http://flight-manual.atom.io/using-atom/images/encodings.png)
+![file encodings](./images/encodings.png)
 
-图3. 修改文件编码
+图 3. 修改文件编码
 
 如果你打开编码菜单并将当前文件的编码修改为其他编码，当你下次保存该文件的时候，该文件将以此编码来输出。
 

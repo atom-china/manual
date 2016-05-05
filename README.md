@@ -10,6 +10,7 @@
     * [安装 Atom](./chapter-1-getting-started/installing-atom.md)
 * [第二章：使用 Atom](./chapter-2-using-atom/)
     * [Atom 文本选择](./chapter-2-using-atom/atom-selections.md)
+    * [编辑和删除文本](./chapter-2-using-atom/editing-and-deleting-text.md)
 
 ## 如何参与翻译
 
@@ -39,6 +40,8 @@
 
   ```
   这个仓库托管在 GitHub 上。
+
+  图 1. 使用多光标
   ```
 
 * 嵌套在内容里的超链接前后使用空格。
