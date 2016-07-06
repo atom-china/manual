@@ -14,6 +14,7 @@
     * [Atom 文本选择](./chapter-2-using-atom/atom-selections.md)
     * [编辑和删除文本](./chapter-2-using-atom/editing-and-deleting-text.md)
     * [查找和替换](./chapter-2-using-atom/find-and-replace.md)
+    * [自动补全](./chapter-2-using-atom/autocomplete.md)
 
 ## 如何参与翻译
 
