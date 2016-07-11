@@ -5,3 +5,4 @@
 * [编辑和删除文本](./editing-and-deleting-text.md)
 * [查找和替换](./find-and-replace.md)
 * [自动补全](./autocomplete.md)
+* [语法](./grammar.md)
