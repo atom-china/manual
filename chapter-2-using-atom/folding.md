@@ -10,4 +10,4 @@
 
 使用 `alt-cmd-shift-{` 和 `alt-cmd-shift-}` 键组来折叠和展开所有代码段，使用 `cmd-k cmd-N` 来指定折叠的缩进级别，其中N是缩进深度。 
  
-选中你想折叠的代码或文本块，通过按下 `ctrl-alt-cmd-F`，或者在命令面板中选择 `Fold Selection`，可以折叠起代码或文本的任意一部分，。 
+选中你想折叠的代码或文本块，通过按下 `ctrl-alt-cmd-F`，或者在命令面板中选择 `Fold Selection`，可以折叠起代码或文本的任意一部分。 
