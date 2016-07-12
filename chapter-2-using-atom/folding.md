@@ -4,7 +4,7 @@
  
 当你把鼠标移到数字栏上，你就可以点击显示的箭头来折叠代码段。你也可以使用快捷键 `alt-cmd-[` 和 `alt-cmd-]` 来折叠和展开代码段。 
  
-![](img/folding.png) 
+![folding code](./images/folding.png) 
 
 使用 `alt-cmd-shift-{` 来折叠所有代码段，使用 `alt-cmd-shift-}` 来展开所有代码段。你也可以使用 `cmd-k cmd-N` 来指定折叠的缩进级别，其中N是缩进深度。 
  
