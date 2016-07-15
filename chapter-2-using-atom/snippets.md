@@ -21,7 +21,7 @@
 
 要查看当前打开文件拥有的所有可用代码段，你可以按下 `Alt+Shift+S`。
 
-![see all the available snippets](./images/snippets1.png)
+![see all the available snippets](./images/snippets-see-snippets.png)
 
 图 1. 查看当前文件可用代码段
 
@@ -48,7 +48,7 @@
 
 例如，你想要添加在 Java 文件中工作的代码段，我们应该先在我们的设置视图中寻找 `language-java` 包，然后我们看到了 Scope 是 `source.java`，代码段最顶层的键就应该是它前面加上一个点（就像 CSS 选择器那样）。
 
-![](img/snippet-scope.png)
+![snippet scope](./images/snippet-scope.png)
 
 下一层的键是代码段的名字，用于在代码段菜单中，以一个更具可读性的方式来描述代码段。通常来说，这里最好使用对人来说具有可读性的字符串。
 
