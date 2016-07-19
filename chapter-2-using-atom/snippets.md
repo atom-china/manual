@@ -67,9 +67,7 @@ console.log("crash");
 其中的 `crash` 字符串会在开始时被选中，再次按下 `Tab` 键之后，光标会移动到分号之后。
 
 <div style="background:red;">
-
-高亮文本
-
+<p>高亮文本</p>
 </div>
 
 并不像 CSS 选择器，代码段的键每层只能重复一次。如果某一层有重复的键，只有最后的那个会被读到，详见[配置CSON](http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson)。
