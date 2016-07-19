@@ -44,19 +44,19 @@
     'body': 'console.log(${1:"crash"});$2'
 ```
 
-最顶层的键是选择器，即在哪里会加载代码段。访问你想要添加代码段的语言的语言包，并找到 `Scope` 字符串，是想要知道此选择器是什么的最简单的方法。
+最顶层的键是选择器，即加载代码段的地方。获知此选择器是什么最简单的方法，是访问你想要添加代码段的语言的语言包，并找到 `Scope` 字符串。
 
-例如，想要添加在 Java 文件中工作的代码段，应该先在 `Settings` 视图中寻找 `language-java` 包，可以看到 Scope 是 `source.java`，代码段最顶层的键就应该是它前面加上一个点（就像 CSS 选择器那样）。
+例如，想要添加在 Java 文件中工作的代码段，应该先在 `Settings` 视图中寻找 `language-java` 包，可以看到 Scope 是 `source.java`，因此代码段最顶层的键就应该是它前面加上一个点（就像 CSS 选择器那样）。
 
 ![snippet scope](./images/snippet-scope.png)
 
 图 2. Java 文件中的 Scope
 
-下一层的键是代码段的名字，用于在代码段菜单中，以一个更具可读性的方式来描述代码段。可以根据需要对代码段进行命名。
+下一层的键是代码段的名字，用于在代码段菜单中，以一个更具可读性的方式来描述代码段。可以将代码段命名为任何想要的名字。
 
 在每个代码段的名字下面是 `prefix`，用于触发代码段，以及当代码段被触发后插入 `body`。
 
-每个后面带有数字的 `$` 是 tab 的停止位置。在代码段被触发之后，通过按下 `Tab` 键来遍历它们。
+每个后面带有数字的 `$` 是 Tab 的停止位置。一旦代码段被触发，通过按下 `Tab` 键来遍历它们。具有相同数字的 Tab 停止位置将会创建多重光标。
 
 上面的例子向 Javascript 文件添加了 `log` 代码段，它会被扩展为：
 
@@ -66,11 +66,13 @@ console.log("crash");
 
 其中的 `crash` 字符串会在开始时被选中，再次按下 `Tab` 键之后，光标会移动到分号之后。
 
+<div style="background:yellow;">
 并不像 CSS 选择器，代码段的键每层只能重复一次。如果某一层有重复的键，只有最后的那个会被读到，详见[配置CSON](https://atom.io/docs/v1.0.3/ch00/_cson)。
+</div>
 
 ### 多行代码段主体 ###
 
-对于长一些的模板，你可以使用 `"""` 来使用多行语法。
+可以使用[CoffeeScript 多行语法 ](http://coffeescript.org/#strings)的 `"""` 来创建长模板。
 
 ```
 '.source.js':
@@ -87,7 +89,7 @@ console.log("crash");
     """
 ```
 
-像你可能期待的那样，这是一个创建代码段的代码段。如果你打开一个代码段文件，输入 `snip` 之后按下 `tab`，会将以下内容插入到文件中：
+如你所料，存在一个可创建代码段的代码段。如果你打开一个代码段文件，输入 `snip` 之后按下 `Tab`，会将以下内容插入到文件中：
 
 ```
 '.source.js':
@@ -96,8 +98,8 @@ console.log("crash");
     'body': 'Hello World!'
 ```
 
-砰的一下，就把那个东西填充了，然后得到了一个代码段。只要你保存了文件，Atom 就会重新加载它，你也就能立即使用它了。
+这样就有了你自定义的代码段。只要保存了文件，Atom 就会重新加载它，你也就能立即使用它了。
 
-代码段功能在 atom/snippets 包中实现。
+代码段功能在 [atom/snippets](https://github.com/atom/snippets) 包中实现。
 
-更多例子请见[language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson)中的代码段，和[language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson)包。
+更多例子请见[language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson)和[language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson)包。
