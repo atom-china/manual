@@ -66,9 +66,13 @@ console.log("crash");
 
 其中的 `crash` 字符串会在开始时被选中，再次按下 `Tab` 键之后，光标会移动到分号之后。
 
-<div style="background:yellow;">
-并不像 CSS 选择器，代码段的键每层只能重复一次。如果某一层有重复的键，只有最后的那个会被读到，详见[配置CSON](https://atom.io/docs/v1.0.3/ch00/_cson)。
+<div style="background:red;">
+
+高亮文本
+
 </div>
+
+并不像 CSS 选择器，代码段的键每层只能重复一次。如果某一层有重复的键，只有最后的那个会被读到，详见[配置CSON](http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson)。
 
 ### 多行代码段主体 ###
 
@@ -102,4 +106,4 @@ console.log("crash");
 
 代码段功能在 [atom/snippets](https://github.com/atom/snippets) 包中实现。
 
-更多例子请见[language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson)和[language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson)包。
+更多代码段的例子请见[language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson)和[language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson)包。
