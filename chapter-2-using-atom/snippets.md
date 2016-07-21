@@ -17,7 +17,7 @@
 </html>
 ```
 
-同时它会把光标定位在 `title` 标签的中间，以便你可以立即开始填充这个标签。许多代码段具有多个焦点位置，通过按下 `Tab` 在他们之间切换 —— 比如，在上例HTML代码段之中，当填充完标题标签之后，可以按下 `Tab` 键，然后光标就会移动到 body 标签之间。
+同时它会把光标定位在 `title` 标签的中间，以便你可以立即开始填充这个标签。许多代码段具有多个焦点位置，通过按下 `Tab` 在他们之间切换 —— 比如，在上例 HTML 代码段之中，当填充完标题标签之后，可以按下 `Tab` 键，然后光标就会移动到 body 标签之间。
 
 要查看当前打开文件拥有的所有可用代码段，你可以按下 `Alt+Shift+S`。
 
@@ -100,4 +100,4 @@ console.log("crash");
 
 代码段功能在 [atom/snippets](https://github.com/atom/snippets) 包中实现。
 
-更多代码段的例子请见[language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson)和[language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson)包。
+更多代码段的例子请见 [language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson) 和 [language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson) 包。
