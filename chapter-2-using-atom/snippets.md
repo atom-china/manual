@@ -70,7 +70,7 @@ console.log("crash");
 
 ### 多行代码段主体 ###
 
-可以使用[ CoffeeScript 多行语法 ](http://coffeescript.org/#strings)的 `"""` 来创建长模板。
+可以使用 [CoffeeScript 多行语法](http://coffeescript.org/#strings)的 `"""` 来创建长模板。
 
 ```coffeescript
 '.source.js':
