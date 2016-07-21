@@ -2,11 +2,11 @@
 
 代码段是用来快速生成常用的代码语法的一个强大和快捷的方式。
 
-比如，输入语句 `habtm`，然后按下回车键 `Tab`，就会扩展为 `has_and_belongs_to_many`。
+其工作思路是，输入 `habtm` 这样的东西，按下回车键 `Tab`，就会扩展为 `has_and_belongs_to_many`。
 
-许多包自带它们自己具有特定模式的代码段。比如，为 HTML 词语高亮和语法提供支持的 `language-html` 包，提供了许多代码段，来创建一些满足不同需求的 HTML 标签。如果你在 Atom 中创建一个新的 HTML 文件，你可以输 入`html` 然后按下 `Tab`，它会扩展为：
+许多包自带它们自己特定的代码段。比如，为 HTML 高亮和语法提供支持的 `language-html` 包，提供了许多代码段，来创建可能想要的各种 HTML 标签。如果你在 Atom 中创建一个新的 HTML 文件，可以输入`html` 然后按下 `Tab`，它会扩展为：
 
-```
+```html
 <html>
   <head>
     <title></title>
@@ -17,7 +17,7 @@
 </html>
 ```
 
-同时它会把光标定位在 `title` 标签的中间，以便你可以立即开始填充这个标签。许多代码段具有多个焦点位置，通过按下 `Tab` 在他们之间切换 —— 比如，在上例 HTML 代码段之中，当填充完标题标签之后，可以按下 `Tab` 键，然后光标就会移动到 body 标签之间。
+同时它会把光标定位在 `title` 标签的中间，以便你可以立即开始填充这个标签。许多代码段具有多个焦点位置，通过按下 `Tab` 在他们之间切换 —— 比如，在上例 HTML 代码段之中，当填充完标题标签之后，可以按下 `Tab` 键，然后光标就会移动到 `body` 标签之间。
 
 要查看当前打开文件拥有的所有可用代码段，你可以按下 `Alt+Shift+S`。
 
@@ -29,22 +29,22 @@
 
 ## 创建你自己的代码段 ##
 
-所以说这样太爽了。但是，如果有一些语言包中没有，或者编写代码中自定义的东西，又要怎么做呢？很幸运的是，你可以非常便利地添加自己的代码段。
+所以说这样太爽了。但是，如果想使用语言包中没有，或者编写代码中自定义的东西，又要怎么做呢？很幸运的是，你可以非常便利地添加自己的代码段。
 
-`%USERPROFILE%\.atom` 目录下的 `snippets.cson` 文本文件，存放了所有自定义的代码段，它们会在 Atom 运行时加载。通过 `File > Snippets` 菜单，打开这个文件。
+`~\.atom` 目录下的 `snippets.cson` 文本文件，存放了所有自定义的代码段，它们会在 Atom 运行时加载。通过 `File > Snippets` 菜单，打开这个文件。
 
 ### 代码段的格式 ###
 
 现在让我们看一看如何编写代码段，基本的代码段格式如下所示：
 
-```
+```coffeescript
 '.source.js':
   'console.log':
     'prefix': 'log'
     'body': 'console.log(${1:"crash"});$2'
 ```
 
-最顶层的键是选择器，即加载代码段的地方。获知此选择器是什么最简单的方法，是访问你想要添加代码段的语言的语言包，并找到 `Scope` 字符串。
+最顶层的键是选择器，即指定加载代码段的范围。获知此择器是什么值最简单的方法，是访问你想要添加代码段的语言的语言包，并找到 `Scope` 字符串。
 
 例如，想要添加在 Java 文件中工作的代码段，应该先在 `Settings` 视图中寻找 `language-java` 包，可以看到 Scope 是 `source.java`，因此代码段最顶层的键就应该是它前面加上一个点（就像 CSS 选择器那样）。
 
@@ -54,25 +54,25 @@
 
 下一层的键是代码段的名字，用于在代码段菜单中，以一个更具可读性的方式来描述代码段。可以将代码段命名为任何想要的名字。
 
-在每个代码段的名字下面是 `prefix`，用于触发代码段，以及当代码段被触发后插入 `body`。
+在每个代码段的名字下面， `prefix`用于触发代码段，`body` 是代码段被触发后插入的主体 。
 
-每个后面带有数字的 `$` 是 Tab 的驻留位置。一旦代码段被触发，通过按下 `Tab` 键来遍历它们。具有相同数字的 Tab 停止位置将会创建多重光标。
+每个后面带有数字的 `$` 是 Tab 的驻留位置。一旦代码段被触发，通过按下 `Tab` 键来遍历它们。具有相同数字的 Tab 停止位置将会创建多个光标。
 
 上面的例子向 Javascript 文件添加了 `log` 代码段，它会被扩展为：
 
-```
+```coffeescript
 console.log("crash");
 ```
 
 其中的 `crash` 字符串会在开始时被选中，再次按下 `Tab` 键之后，光标会移动到分号之后。
 
->并不像 CSS 选择器，代码段的键每层只能重复一次。如果某一层有重复的键，只有最后的那个会被读到，详见[配置CSON](http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson)。
+>并不像 CSS 选择器，代码段的键每层只能重复一次。如果某一层有重复的键，只有最后的那个会被读到，详见[配置 CSON](http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson)。
 
 ### 多行代码段主体 ###
 
-可以使用[CoffeeScript 多行语法 ](http://coffeescript.org/#strings)的 `"""` 来创建长模板。
+可以使用[ CoffeeScript 多行语法 ](http://coffeescript.org/#strings)的 `"""` 来创建长模板。
 
-```
+```coffeescript
 '.source.js':
   'if, else if, else':
     'prefix': 'ieie'
@@ -89,7 +89,7 @@ console.log("crash");
 
 如你所料，存在一个可创建代码段的代码段。如果你打开一个代码段文件，输入 `snip` 之后按下 `Tab`，会将以下内容插入到文件中：
 
-```
+```coffeescript
 '.source.js':
   'Snippet Name':
     'prefix': 'hello'
