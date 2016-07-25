@@ -18,6 +18,7 @@
     * [代码段](./chapter-2-using-atom/snippets.md)
     * [自动补全](./chapter-2-using-atom/autocomplete.md)
     * [折叠](./chapter-2-using-atom/folding.md)
+    * [面板](./chapter-2-using-atom/panes.md)
     * [语法](./chapter-2-using-atom/grammar.md)
 
 ## 如何参与翻译
@@ -101,6 +102,7 @@
 * [hypogaea](https://github.com/hypogaea)
 * [wizardforcel][]
 * [chenxiaoyoyo](https://github.com/chenxiaoyoyo)
+* [zxning](https://github.com/zxning)
 
 ## 鸣谢
 

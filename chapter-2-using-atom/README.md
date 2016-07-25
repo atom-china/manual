@@ -8,4 +8,5 @@
 * [代码段](./snippets.md)
 * [自动补全](./autocomplete.md)
 * [折叠](./folding.md)
+* [面板](./panes.md)
 * [语法](./grammar.md)
