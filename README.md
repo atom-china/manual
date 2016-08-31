@@ -20,6 +20,7 @@
     * [折叠](./chapter-2-using-atom/folding.md)
     * [面板](./chapter-2-using-atom/panes.md)
     * [语法](./chapter-2-using-atom/grammar.md)
+    * [在 Atom 中写作](./chapter-2-using-atom/writing-in-atom.md)
 
 ## 如何参与翻译
 

@@ -10,3 +10,4 @@
 * [折叠](./folding.md)
 * [面板](./panes.md)
 * [语法](./grammar.md)
+* [在 Atom 中写作](./writing-in-atom.md)
