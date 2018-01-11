@@ -21,6 +21,8 @@
     * [面板](./chapter-2-using-atom/panes.md)
     * [语法](./chapter-2-using-atom/grammar.md)
     * [在 Atom 中写作](./chapter-2-using-atom/writing-in-atom.md)
+* [附录 C：升级至 1.0 APIs](./appendix-c-upgrading-to-1.0-apis/)
+    * [升级语法主题](./appendix-c-upgrading-to-1.0-apis/upgrading-your-syntax-theme.md)
 
 ## 如何参与翻译
 
